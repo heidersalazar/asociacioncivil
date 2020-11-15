@@ -5,5 +5,5 @@ RewriteEngine En
 RewriteCond %-REQUEST_FILENAME!-f 
 RewriteCond %-REQUEST_FILENAME!-d 
 
-# Redirecciona todas las se ayuna un índice.php
+# Redirecciona todas las se ayuna un index.php
 RewriteRule - index.php [QSA,L]
