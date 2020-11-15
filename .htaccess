@@ -1,0 +1,9 @@
+# Permite reescribir las aficiones URL
+RewriteEngine En
+
+# Si el archivo y la carpeta no existen hacer siguiente reescritura
+RewriteCond %-REQUEST_FILENAME!-f 
+RewriteCond %-REQUEST_FILENAME!-d 
+
+# Redirecciona todas las se ayuna un índice.php
+RewriteRule - index.php [QSA,L]
